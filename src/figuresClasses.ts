@@ -38,7 +38,7 @@ export class Triangle implements Figure {
         (semiPerimeter - this.c),
     );
 
-    return +area.toFixed(2);
+    return Math.floor(area);
   };
 }
 
@@ -71,7 +71,7 @@ export class Rectangle implements Figure {
     }
   }
 
-  getArea = (): number => +(this.width * this.height).toFixed(2);
+  getArea = (): number => Math.floor(this.width * this.height);
 }
 
 export function getInfo(figure: Figure): string {
