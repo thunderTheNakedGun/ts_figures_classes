@@ -71,7 +71,7 @@ export class Rectangle implements Figure {
     }
   }
 
-  getArea = (): number => Math.floor(this.width * this.height);
+  getArea = (): number => Math.floor(this.width * this.height * 100) / 100;
 }
 
 export function getInfo(figure: Figure): string {
