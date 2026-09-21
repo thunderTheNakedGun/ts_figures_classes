@@ -38,7 +38,7 @@ export class Triangle implements Figure {
         (semiPerimeter - this.c),
     );
 
-    return Math.floor(area);
+    return Math.floor(area * 100) / 100;
   };
 }
 
